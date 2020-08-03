@@ -11,26 +11,37 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
+xcuserdata
 *.xccheckout
 profile
 *.moved-aside
 DerivedData
 *.hmap
 *.ipa
+*.o
 
 # Bundler
 .bundle
 
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+# Carthage
+Carthage
+!Carthage/**
 
-Carthage/Build
+# AppCode
+.idea
 
+# SPM
+.build
+
+# Cocoapods
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
 # Note: if you ignore the Pods directory, make sure to uncomment
 # `pod install` in .travis.yml
 #
+Pods/
+Podfile.lock
+Demo/RxSwiftExtDemo/RxSwiftExtPlayground.playground/Pages/not.xcplaygroundpage/timeline.xctimeline
+Package.resolved
